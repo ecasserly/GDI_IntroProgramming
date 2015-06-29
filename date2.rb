@@ -2,29 +2,62 @@ puts "Hi, I'm your boring bar date."
 
 bye = 0
 
-while bye != 3
+while bye == 0
 
 	response1 = gets.chomp
 
-	if response1 = "BYE"
+	if response1 == "BYE"
+		puts "Did you say tie?"
 		bye = bye + 1
 
 	else
+		bye = bye
 
+		if response1 == response1.upcase
+			puts "NO, NOT SINCE" + " " + (rand(14) + 1983).to_s + "!"
 
-while response != "BYE"
+		else
+			puts "Hu!?!? Um - YA! I CAN'T HEAR YOU! THE MUSIC'S TOO LOUD!"
+		end
+	end
+end
 
-	if response == response.upcase
-		puts "NO, NOT SINCE" + " " + (rand(14) + 1983).to_s + "!"
-		response = gets.chomp
+while bye == 1
+
+	response2 = gets.chomp
+
+	if response2 == "BYE"
+		bye = bye + 1
+		puts "Did you say rye?"
 
 	else
-		puts "Hu!?!? Um - YA! I CAN'T HEAR YOU! THE MUSIC'S TOO LOUD!"
-		response = gets.chomp
-	end
+		bye = bye - 1
 
-	if response == "BYE"
-		puts "OH! IT WAS NICE MEETING YOU!"
+		if response2 == response2.upcase
+			puts "NO, NOT SINCE" + " " + (rand(14) + 1983).to_s + "!"
+
+		else
+			puts "Hu!?!? Um - YA! I CAN'T HEAR YOU! THE MUSIC'S TOO LOUD!"
+		end
+	end
+end
+
+while bye == 2
+
+	response3 = gets.chomp
+
+	if response3 == "BYE"
+		puts "Ooooh, bye bye then."
+
+	else
+		bye = bye - 2
+
+		if response3 == response3.upcase
+			puts "NO, NOT SINCE" + " " + (rand(14) + 1983).to_s + "!"
+
+		else
+			puts "Hu!?!? Um - YA! I CAN'T HEAR YOU! THE MUSIC'S TOO LOUD!"
+		end
 	end
 
 end
