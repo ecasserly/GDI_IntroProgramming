@@ -1,64 +1,30 @@
 puts "Hi, I'm your boring bar date."
 
-response1 = " "
-response2 = " "
-response3 = " "
+bye = 0
 
-while response1 != "BYE" || response2 != "BYE" || response3 != "BYE"
+while bye != 3
 
-	while response1 != "BYE"
+	response1 = gets.chomp
 
-		response1 = gets.chomp
+	if response1 = "BYE"
+		bye = bye + 1
 
-		if response1 == response.upcase
-		
-			puts "NO, NOT SINCE" + " " + (rand(14) + 1983).to_s + "!"
+	else
 
-		else
-			puts "Hu!?!? Um - YA! I CAN'T HEAR YOU! THE MUSIC'S TOO LOUD!"
 
-		end
+while response != "BYE"
 
-		if response1 == "BYE"
+	if response == response.upcase
+		puts "NO, NOT SINCE" + " " + (rand(14) + 1983).to_s + "!"
+		response = gets.chomp
 
-			response2 == " "
-			response3 == " "
-		end
-
+	else
+		puts "Hu!?!? Um - YA! I CAN'T HEAR YOU! THE MUSIC'S TOO LOUD!"
+		response = gets.chomp
 	end
 
-
-	while response2 != "BYE"
-
-		response2 = gets.chomp
-
-		if response2 == response.upcase
-		
-			puts "NO, NOT SINCE" + " " + (rand(14) + 1983).to_s + "!"
-
-		else
-			puts "Hu!?!? Um - YA! I CAN'T HEAR YOU! THE MUSIC'S TOO LOUD!"
-
-		end
-	end
-
-	while response3 != "BYE"
-
-		response3 = gets.chomp
-
-		if response3 == response.upcase
-		
-			puts "NO, NOT SINCE" + " " + (rand(14) + 1983).to_s + "!"
-
-		else
-			puts "Hu!?!? Um - YA! I CAN'T HEAR YOU! THE MUSIC'S TOO LOUD!"
-
-		end
-	end
-
-	if response1 == "BYE" && response2 == "BYE" && response2 == "BYE"
+	if response == "BYE"
 		puts "OH! IT WAS NICE MEETING YOU!"
-		break
 	end
 
 end
