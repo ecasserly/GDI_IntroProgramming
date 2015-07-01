@@ -1,0 +1,14 @@
+Week 4 Notes
+
+Nothingness
+
+nil
+
+Everything in Ruby is an object
+The idea of something not being there is a falsey value
+Whenever you see nil it evaluates to false and it equates to the absence of an object
+
+rand (range)
+rand (1..10) - includes 10
+rand (1...10) - does not include 10
+

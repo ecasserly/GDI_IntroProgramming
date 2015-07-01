@@ -2,7 +2,7 @@ puts "Hi, I'm your boring bar date."
 
 bye = 0
 
-while bye == 0
+while bye  0
 
 	response1 = gets.chomp
 
@@ -48,6 +48,7 @@ while bye == 2
 
 	if response3 == "BYE"
 		puts "Ooooh, bye bye then."
+		break
 
 	else
 		bye = bye - 2
